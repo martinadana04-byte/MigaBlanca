@@ -1,0 +1,107 @@
+/* HERO */
+
+#hero{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0)), url('../images/heroe_SanValentin.png');
+}
+
+/* cabeceras */
+
+#cabecera{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#cabecera h2{
+    font-size: 2rem;
+    color: #333;
+}
+
+#cabecera p{
+    color: #666;
+}
+
+/* DESTACADOS */
+
+#destacados{
+    margin: 5rem 5% 2rem 5%;
+}
+
+#destacados #productos{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.destacado1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 0.1rem solid black;
+}
+
+.destacado1 img{
+    height: 100%;
+}
+
+.destacado2, .destacado3{
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid black;
+}
+
+.destacado2 img, .destacado3 img{
+    width: 100%;
+}
+
+/* DIETAS */
+
+#dietas{
+    margin: 5rem 5% 2rem 5%;
+}
+
+#dietas #articulos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+#articulos article{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 0.1rem solid black;
+}
+
+#articulos article img{
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    #destacados #productos {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .destacado1 {
+        flex-direction: column-reverse;
+    }
+
+    .destacado1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #dietas #articulos {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #articulos article {
+        flex-direction: column-reverse;
+    }
+
+    #articulos article img {
+        width: 100%;
+        height: auto;
+    }
+}

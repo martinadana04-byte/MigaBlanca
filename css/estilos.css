@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fdfaf5;
+}
+
+h2{
+    color: #3C3734;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* NAV */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#logo, header div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo a{ 
+    text-decoration: none; 
+    font-weight: bold; 
+    color: black;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1.5em 5%;
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    header nav a {
+        margin: 5px 10px;
+        font-size: 16px;
+    }
+
+    #logo {
+        margin-bottom: 5px;
+    }
+}
+
+
+/* HERO */
+
+#hero{
+    height: 520px;
+    background-size: cover; 
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5%;
+    color: white;
+}
+
+#hero span{
+    color: #f6afb9;
+}
+
+#hero h1{
+    font-size: 3rem; 
+    max-width: 600px;
+    margin-bottom: 20px;     
+}
+
+#hero p{
+    max-width: 700px; 
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+#hero.cta{
+    display: flex;
+    gap: 15px;      
+    margin-top: 25px;
+}
+
+#hero button{
+    padding: 13px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#hero .boton1{
+    background-color: #ffffff; 
+    color: #000000;           
+    border: none;   
+    margin-right: 10px;           
+}
+#hero .boton2{
+    background-color: transparent;      
+    color: #ffffff;                  
+    border: 1px solid #ffffff;         
+}
+
+#hero .boton1:hover{
+    background-color: #f6afb9;
+    color: #000000;
+}
+
+#hero .boton2:hover{
+    border: 1px solid #f6afb9;
+    color: #f6afb9;
+}
+
+/* ARTICULOS */
+
+/* .texto */
+.texto{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.texto p{
+    margin-bottom: 1.5rem;
+}
+.texto button{
+    background-color: #fdfaf5;
+    border: 0.1 solid #201f1f;
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.texto button:hover{
+    background-color: #201f1f;
+    color: #fdfaf5;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0rem 3rem 0rem;
+    border-top: 1px solid #a3a3a3;
+    padding: 1rem;
+}
+
+footer p{
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    color: #201f1f;
+    font-weight: 600;
+}
+
+.redes-sociales img{
+    width: 32px;
+    height: 32px;
+    margin: 1rem 0.6rem 0rem 0.6rem;
+}

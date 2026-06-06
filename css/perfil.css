@@ -1,0 +1,354 @@
+main {
+    margin: 5rem 5% 2rem 5%;
+}
+
+#perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+#perfil aside {
+    border: 1px solid #999;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+#perfil aside img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#perfil aside p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #777371;
+}
+
+#perfil aside h3 {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 11px;
+}
+
+#perfil aside .botones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#perfil aside button {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px;
+    font-size: 0.75rem;
+    background-color: #8d827c;
+    color: white;
+    border: none;
+}
+
+#perfil aside button:hover {
+    background-color: #766e69;
+}
+
+/* FAVORITOS */
+
+#favoritos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#favoritos h3 {
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+#favoritos article{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    border: 1px solid #999;
+    gap: 15px;
+    background-color: #fff;
+}
+
+#favoritos article h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#favoritos article p {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+#favoritos article img{
+    width: 90px;
+    height: 75px;
+    object-fit: cover;
+    display: block;
+}
+
+.like img{
+    width: 20px;  
+    height: 20px;      
+    object-fit: contain; 
+    padding: 11px;
+}
+
+#favoritos button {
+    background-color: #8d827c;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    width: 120px;
+    margin-left: auto; 
+}
+
+#favoritos button:hover {
+    background-color: #766e69;
+}
+
+/* CONFIGURACION */
+
+#configuracion {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#configuracion h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#datos, #seguridad, #notificaciones, #pago {
+    border: 1px solid #999;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F6F4;
+}
+
+#configuracion h3 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#datos h3 {
+    margin-bottom: 0px;
+}
+
+#datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#datos label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+#datos input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+}
+
+#datos br {
+    display: none;
+}
+
+#datos button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #766e69;
+    color: white;
+    border: none;
+}
+
+#datos button:hover {
+    background-color: #5d5652;
+}
+
+#seguridad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#seguridad label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#seguridad input {
+    padding: 8px;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+#seguridad br {
+    display: none;
+}
+
+#seguridad button {
+    padding: 10px 20px;
+    background-color: #766e69;
+    color: white;
+    border: none;
+}
+
+#seguridad button:hover {
+    background-color: #5d5652;
+}
+
+/* NOTIFICACIONES */
+
+#notificaciones div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border: 1px solid #999;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    color: #3C3734;   
+    background-color: #fff;
+}
+
+#notificaciones h3 {
+    color: #3C3734;
+}
+
+#notificaciones button {
+    padding: 10px 20px;
+    background-color: #766e69;
+    color: white;
+    border: none;
+}
+
+#notificaciones button:hover {
+    background-color: #5d5652;
+}
+
+/* PAGO */
+
+#pago h3 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#pago p {
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#pago .metodo {
+    border: 1px solid #999;       
+    padding: 10px;               
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#pago button {
+    padding: 10px 20px;
+    background-color: #766e69;
+    color: white;
+    border: none;
+}
+
+#pago button:hover {
+    background-color: #5d5652;
+}
+
+h4 {
+    margin-bottom: 24px;
+}
+
+
+@media (min-width: 769px) {
+    #perfil {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    #favoritos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    #favoritos h3 {
+        grid-column: span 2;
+    }
+
+    #favoritos button {
+        grid-column: 2;
+        margin-left: auto;
+    }
+
+    #configuracion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    #configuracion h2 {
+        grid-column: span 2;
+    }
+
+    #datos {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 15px 25px;
+        align-items: center;
+    }
+
+    #datos h3 {
+        grid-column: span 2;
+    }
+
+    #datos label {
+        margin: 0;
+    }
+
+    #datos button {
+        grid-column: span 2;
+        width: auto;
+        padding: 12px 30px;
+        margin-top: 15px;
+    }
+
+    #pago {
+        grid-column: span 2;
+    }
+}

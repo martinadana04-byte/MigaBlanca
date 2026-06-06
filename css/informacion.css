@@ -1,0 +1,195 @@
+/* HERO */
+
+#hero{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0)), url('../images/heroe_ReposteriaArtesanal.png');
+}
+
+main{
+    margin: 2rem 5% 2rem 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cabecera{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#cabecera h2{
+    font-size: 2rem;
+    color: #333;
+}
+
+#cabecera p{
+    color: #666;
+}
+
+
+.cta{
+    display: flex;
+    gap: 15px;
+}
+
+.cta button{
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.cta .boton1{
+    background-color: white;
+    color: black;
+}
+
+.cta .boton2{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+#equipo{
+    margin-bottom: 60px;
+}
+
+#equipo #cabecera h2{
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+#equipo #cabecera p{
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+#personal{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#personal article{
+    flex: 1;
+    border: 1px solid #999;
+    background-color: #fdfaf5;
+    text-align: center;
+}
+
+#personal article img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#personal article p{
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 1px solid #999;
+}
+
+#fq{
+    width: 100%;
+}
+
+#fq #cabecera{
+    border-bottom: 1px solid #999;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#cabecera h2{
+    font-weight: 700;
+    
+}
+
+#fq h2{
+    font-size: 1.3rem;
+    font-weight: 1000px;
+    
+}
+
+#preguntas article{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #fdfaf5; 
+}
+
+#preguntas article img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+#preguntas article p{
+    flex: 1;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #222;
+}
+
+#preguntas article button{
+    background-color: transparent;
+    border: 1px solid #999;
+    padding: 6px 15px;
+    font-size: 0.85rem;
+}
+
+.boton-todo{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #999;
+    padding: 12px;
+    font-size: 0.9rem;
+    margin-top: 25px;
+}
+
+
+@media (max-width: 768px) {
+    
+    
+    #hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .cta {
+        flex-direction: column; 
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .cta button {
+        width: 100%; 
+    }
+
+    
+    #personal {
+        flex-direction: column; 
+        gap: 25px;  
+    }
+
+    #personal article {
+        width: 100%;  
+    }
+
+    
+    #preguntas article {
+        flex-direction: column; 
+        text-align: center;
+        gap: 12px;
+        padding: 20px 0;
+    }
+
+    #preguntas article img {
+        margin-right: 0;  
+    }
+}

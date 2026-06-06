@@ -1,0 +1,141 @@
+/* HERO */
+
+#hero{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0)), url('../images/heroe_MigaMacarons.png');
+}
+
+/* CATALOGO */
+
+#catalogo{
+    margin: 2rem 5% 2rem 5%;
+}
+
+/* cabecera */
+
+#cabecera{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 30px 0;
+}
+
+#filtrar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+#filtrar input{
+    width: 97%;
+    height: 2rem;
+    border-width: 0.125rem;
+    border-color: #201f1f;
+}
+
+#filtrar img{
+    width: 30px;
+    height: 30px;
+}
+
+/* productos */
+
+#productos{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 1.5rem;
+}
+
+#productos article{
+    border: 0.1rem solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#productos img{
+    width: 100%;
+    background-size: cover;
+}
+
+.texto{
+    margin: 1rem;
+}
+.texto p{
+    margin-bottom: 1.5rem;
+}
+.texto button{
+    background-color: #fdfaf5;
+    border: 0.1 solid #201f1f;
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    justify-content: end;
+    border-style: none;
+    margin: 5rem 5% 2rem 5%;
+}
+
+footer #boton{
+    background-color: #877D76;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+}
+
+footer #boton:hover{
+    background-color: #fdfaf5;
+    color:  #877D76;
+    border: 0.1rem solid #877D76;
+}
+
+@media (max-width: 768px) {
+
+    
+    #hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .cta {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .cta button {
+        width: 100%;
+    }
+
+    #filtrar {
+        width: 90%; 
+        gap: 15px;
+    }
+
+    #filtrar input {
+        width: 100%;
+
+    }
+    #productos {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;  
+        column-gap: 0;
+        row-gap: 2rem; 
+    }
+
+    
+    footer {
+        justify-content: center;
+        margin: 3rem 5% 2rem 5%;
+    }
+}
